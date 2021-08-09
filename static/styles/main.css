@@ -1,0 +1,66 @@
+body{
+    /* background-color:rgb(255, 204, 204); */
+    background-color:#e6ffff;
+    }
+
+h1 {                    /*title */
+    font-style: italic;
+    text-align: justify;
+    margin-left: 550px;
+    margin-top: 50;
+}
+h5 {                    /*subtitle */
+    text-align: justify;
+    width: 700px;
+  margin-left: 550px;
+  /*margin-left: 300px; */
+	margin-right: 600px;
+	font-size: 30px; /*f i n a l l y ! some JUICE */
+  margin-top: -10px;
+	}
+div.blog {  /*use DIV to define a style to apply to things*/
+    text-align: justify; /* justify makes text fill around a certain space */
+    width: 380px;
+	margin-left: 400px;
+	margin-right: 800px;
+  margin-top: -40px;
+	font-family: monospace;
+  font-size: 15px;
+	line-height: 1.5;
+}
+div.menu {
+
+  font-family: "Lucida Console", Monaco, monospace;
+  text-align: justify;
+  font-style: oblique;
+  font-style: bold;
+  margin-left: 0px;
+  margin-top: 10px;
+}
+
+/*REST IS FOR NAVIGATION BAR*/
+
+a{
+  color: black;
+  display: inline;
+  padding: 8px;
+  background-color: #ffcccc;
+
+}
+ul {
+  list-style-type: none;
+  margin-left: 400px;
+	margin-right: 560px;
+  padding: 5px;
+  overflow: hidden;
+  background-color: #ffcccc;
+}
+
+li {
+  float: left;
+  display: block;
+}
+li a:hover {
+  background-color: #ff9999;
+  color: black;
+}

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Statistics - Chordbot</title>
+    <link rel="stylesheet" type= "text/css" href="{{ url_for('static', filename='styles/main.css') }}">
+</head>
+<body>
+  <h1>ChordBot</h1>
+    <div class="menu">
+      <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="help">Help</a></li>
+      </ul>
+    </div>
+    <h5>Results</h5>
+  <div class="blog">
+    <p>
+    {{ statistics_report[4] }} <br> <br>
+    click <a href={{download_link}}>here</a> to listen to the chord progression
+    that ChordBot created, based on {{song_file_name}}<br><br>
+    click <a href={{original_piece_path}}>here</a> to listen to the
+    that ChordBots song was based on.
+    </p>
+
+    <h3>Bonus fun facts about "{{ song_file_name }}":<br></h1>
+    <p>{{ statistics_report[0] }}<br>
+    {{ statistics_report[1] }}<br>
+    {{ statistics_report[2] }}<br>
+    {{ statistics_report[3] }}<br>
+    <br><br>
+    ROMAN NUMBERAL KEY <br>
+    (all in major key)<br>
+    I   tonic<br>
+    ii  Supertonic <br>
+    iii Mediant<br>
+    IV  Subdominant<br>
+    V   Dominant<br>
+    vi  Submediant <br>
+    vii Leading tone <br>
+<br>
+    ALSO NOTE:<br>
+    capital roman numeral means its the MAJOR chord, lowercase means its MINOR <br>
+    <br>
+    Additional numbers means that you add that interval to the chord. So if I = Cmaj,
+    then I46 is Cmajor add4 add6, which is C,E,F,G,A
+    <br>
+    <br>
+    </p>
+
+
+  </div>
+    <!-- <h1>Email: {{ email }}</h1> -->
+    <!-- <h1>Hobbies: {{ hobbies }}</h1> -->
+</body>
+</html>

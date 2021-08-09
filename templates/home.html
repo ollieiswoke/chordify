@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+		<title>Home - ChordBot</title>
+    <link rel="stylesheet" type= "text/css" href="{{ url_for('static', filename='styles/main.css') }}">
+    <title></title>
+</head>
+
+<body>
+    <h1>ChordBot</h1>
+
+    <div class="menu">
+      <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="help">Help</a></li>
+      </ul>
+    </div>
+    <h5>Select a Song</h5>
+    <div class="blog">
+    <p>Identifies frequent chord progressions in songs that you like! So you can use these chord progression in your songs. <br><br>
+			Please select a song for ChordBot to analyse and take inspiration from. :) <br></p>
+    <form action="showbio">
+			<input type="radio" name="song_file_name" value="The_Beatles_Here_Comes_the_Sun"checked> The Beatles - Here Comes the Sun<br>
+				<input type="radio" name="song_file_name" value="Debussy_Clair_De_Lune"> Debussy - Clair De Lune<br>
+				<input type="radio" name="song_file_name" value="Kirby_Fountain_of_Dreams"> Kirby Fountain of Dreams<br>
+        <input type="radio" name="song_file_name" value="Undertale_Once_Upon_A_Time"> Undertale Once Upon A Time<br>
+        <input type="radio" name="song_file_name" value="Smash_Brothers_Melee_Break_The_Targets"> Smash Brothers Melee - Break The Targets<br>
+        <input type="radio" name="song_file_name" value="Doki_Doki_Literature_Club_theme"> Doki Doki Literature Club theme<br>
+        <input type="submit" name="">
+        <p><br>May take a few minutes to submit as ChordBot processes the song...</p>
+    </form>
+    </div>
+</body>
+</html>
